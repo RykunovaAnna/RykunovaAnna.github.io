@@ -10,6 +10,15 @@ nav{
   clear: both;
   width: 100%;
 }
+
+  .table {
+    width: 100%;
+}
+  .wrapper-table {
+     overflow: visible;
+     order: 0;
+  }
+
 #menu a{
   margin-right: 50px;
 }

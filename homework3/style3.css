@@ -1,16 +1,115 @@
-@media screen and (max-width: 428px) {
-  body {
-    background-color: #D8BFD8;
+.page{
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+nav{
+  display: flex;
+  flex-direction: column;
+  clear: both;
+  width: 100%;
+}
+#menu a{
+  margin-right: 50px;
+}
+tr.colorr {
+  background:white;
+}
+table{
+  background: #D8BFD8;
+  text-align: center;
+}
+#name{
+  color: white;
+}
+
+header{
+  background-color:#BA55D3;
+  padding:10px;
+}
+body{
+
+  background-image: linear-gradient(#D8BFD8,#BA55D3,#9400D3,#4169E1, #00BFFF,#9370DB,#D8BFD8,#FFFFE0,#FFE4B5);
+}
+#divb{
+  width:100%;
+  background-color:#DDA0DD;
+  padding: 10px;
+  height:120px;
+
+}
+#myimg{
+  float:left;
+  margin:10px;
+  width:100px;
+  height:100px;
+}
+
+div.divg{
+  width:100%;
+  background-color:#E6E6FA;
+  margin: 0 auto;
+  margin-top:20px;
+  padding:10px;
+}
+footer{
+  color: #8B008B;
+  background-color:#E6E6FA;
+  margin:50px;
+  padding:10px;
+  max-width: 960px;
+}
+.page :nth-child(1){
+  order: 1;
+}
+.page :nth-child(3){
+  order: 2;
+}
+
+.page :nth-child(2){
+  order: 3;
+}
+.page :nth-child(4){
+  order: 4;
+}
+
+@media screen and (min-width: 800px) and (orientation: landscape) {
+  .header {
+    flex-direction: row;
   }
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+div.divg{
+  width: 600px;
+}
   nav {
-    order: 1; 
-    margin-top: 10px;
-    text-align: left;
+    flex-direction: row;
+    max-width: 600px;
+    text-align: center;
   }
+  nav div{
+    margin: 0 auto;
+  }
+  #menu a{
+    margin-right: 50px;
+  }
+.page{
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+  .page :nth-child(2){
+    order: 2;
+  }
+
+  .page :nth-child(3){
+    order: 3;
+  }
+
+  .form{
+    width: 540px;
+  }
+
 }
 
 tr.colorr{
@@ -24,7 +123,7 @@ table{
 }  
 header{
   background-color: #BA55D3;
-  padding: 10px;  
+  padding: 10px; 
 }
 nav{
   text-align: right;

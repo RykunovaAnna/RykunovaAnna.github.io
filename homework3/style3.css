@@ -12,8 +12,8 @@ nav{
 #menu a{
   margin-right: 50px;
 }
-tr.colorr{
-  background: white;
+tr.colorr {
+  background:white;
 }
 table{
   background: #D8BFD8;
@@ -21,13 +21,10 @@ table{
 }
 #name{
   color: white;
-}  
-header{
-  background-color: #BA55D3;
-  padding: 10px;  
 }
-nav{
-  text-align: right;
+header{
+  background-color:#BA55D3;
+  padding:10px;
 }
 body{
   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw-dog.ru%2Fwallpapers%2F12%2F11%2F481285377093631.jpg&f=1&nofb=1);
@@ -88,11 +85,11 @@ footer{
     text-align: right;
   }
   .page{
-   margin: 0 auto;
-   padding: 10px;
-   padding-top: 0;
-   display: flex;
-   flex-direction: column;
+    max-width: 960px;
+    background-color: #E6E6FA;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
   }
   .page :nth-child(2){
    order: 2;

@@ -1,15 +1,14 @@
-@media screen and (max-width: 480px) and (orientation: portrait) {
+@media screen and (max-width: 720px) and (orientation: portrait) {
   .container {
       display: flex;
       flex-direction: column;
-      order: 1;
     }
     
   nav {
     display: flex;
     text-align: left;
     margin-bottom: 10px;
-    order: 2;
+    order: 1;
   }
     
   table {
@@ -73,6 +72,14 @@ body {
 }
 
 div.divg {
+  max-width: 960px;
+  background-color: #E6E6FA;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+div.divgg {
   max-width: 960px;
   background-color: #E6E6FA;
   margin: 0 auto;

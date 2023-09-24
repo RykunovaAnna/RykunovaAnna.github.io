@@ -1,56 +1,82 @@
-
-tr.colorr{
-  background: white;
+.page{
+  display: flex;
+  flex-direction: column;
+  flex: 3;
 }
-table{
-  background: #D8BFD8;
+nav{
+  flex-direction: column;
+  width: 100%;
 }
 #menu a{
   margin-right: 20px;
 }
+tr.colorr {
+  background:white;
+}
+table{
+  background: #D8BFD8;
+  text-align: center;
+}
 #name{
   color: white;
-}  
-header{
-  background-color: #BA55D3;
-  padding: 10px;  
-}
-nav{
-  text-align: right;
-  background: #D8BFD8;
 }
 body{
   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw-dog.ru%2Fwallpapers%2F12%2F11%2F481285377093631.jpg&f=1&nofb=1);
 }
+
+header{
+  background-color:#BA55D3;
+  padding: 10px;
+}
 #divb{
-  width: 100%;
+  width:100%;
   background-color:#DDA0DD;
   padding: 10px;
-  height: 120px;  
+  height:120px;
+
 }
 #myimg{
-  float: left;
-  margin: 10px;
-  width: 100px;
-  height: 100px;
+  float:left;
+  margin:10px;
+  width:100px;
+  height:100px;
 }
+
 div.divg{
-  max-width: 960px;
-  background-color: #E6E6FA;
+  width: 100%;
+  background-color:#E6E6FA;
   margin: 0 auto;
-  margin-top: 20px;
-  padding: 10px;
+  margin-top:20px;
+  padding:10px;
 }
 footer{
   color: #8B008B;
-  width: 100%;
-  background-color: #E6E6FA;    
-  margin: 10px;
-  padding: 1%;    
+  background-color:#E6E6FA;
+  margin: 50px;
+  padding: 10px;
+}
+.page :nth-child(1){
+  order: 1;
+}
+.page :nth-child(3){
+  order: 4;
+}
+
+.page :nth-child(2){
+  order: 3;
+}
+.page :nth-child(4){
+  order: 4;
 }
 
 @media screen and (min-width: 800px) and (orientation: landscape) {
   .header {
+    flex-direction: row;
+    width: 940; 
+  }
+  nav{
+    text-align: right;
+    background: #D8BFD8;
     flex-direction: row;
   }
 div.divg{
@@ -62,6 +88,11 @@ div.divg{
   padding-top: 0;
   display: flex;
   flex-direction: column;
+}
+footer{
+  width: 100%;
+  margin: 50px;
+  padding: 1%;    
 }
   .page :nth-child(2){
     order: 2;

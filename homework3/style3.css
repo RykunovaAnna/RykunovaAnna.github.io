@@ -1,109 +1,159 @@
-.page{
-  display: flex;
-  flex-direction: column;
-  flex: 3;
+a {
+  font-size: 16px;  
 }
-nav{
-  flex-direction: column;
-  width: 100%;
+th {
+  font-size: 25px;
 }
-#menu a{
-  margin-right: 20px;
-}
-tr.colorr {
-  background:white;
-}
-table{
-  background: #D8BFD8;
+td {
+  font-size: 25px;
   text-align: center;
 }
-#name{
+caption {
+  font-size: 25px;
+}
+li {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+label {
+  font-size: 25px;
+}
+p {
+  font-size: 25px;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  a, li {
+    font-size: 25px;
+  }
+}
+h1 {
   color: white;
 }
-body{
+.header.header {
+  background-color: #DDA0DD;
+  width: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+}
+.header-title {
+  margin-left: 20px;
+  font-size: 25px;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #BA55D3;
+}
+header-container {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper-table {
+  order: 0;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  flex-direction: column;
+  padding-left: 0;
+  order: 1;
+}
+.header .container {
+  display: flex;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #BA55D3;
+}
+
+@media (min-width: 768px) {
+  .nav.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+  }
+  .nav-links {
+    flex-direction: row;
+    margin-top: 0;
+    order: -1;
+  }
+  .header.container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header-title {
+    font-size: 32px;
+  }
+  .wrapper-table {
+    order: 0;
+  }
+}
+
+form {
+  margin-bottom: 50px;
+}
+
+.table {
+  width: 500px;
+  margin: 50px 0;
+}
+tr.colorr {
+  background: white;
+}
+table {
+  background: #D8BFD8;
+}
+header {
+  background-color: #BA55D3;
+  padding: 10px;  
+}
+body {
   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw-dog.ru%2Fwallpapers%2F12%2F11%2F481285377093631.jpg&f=1&nofb=1);
 }
 
-header{
-  background-color:#BA55D3;
-  padding: 10px;
+@media (min-width: 768px) {
+  .table {
+    width: 100%;
+  }
 }
-#divb{
-  width:100%;
-  background-color:#DDA0DD;
-  padding: 10px;
-  height:120px;
 
-}
 #myimg{
-  float:left;
-  margin:10px;
-  width:100px;
-  height:100px;
+  float: left;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
 }
-
-div.divg{
-  width: 100%;
-  background-color:#E6E6FA;
+div.divg {
+  max-width: 960px;
+  background-color: #E6E6FA;
   margin: 0 auto;
-  margin-top:20px;
-  padding:10px;
+  margin-top: 20px;
+  padding: 10px;
 }
-footer{
+footer {
   color: #8B008B;
-  background-color:#E6E6FA;
-  margin: 50px;
-  padding: 10px;
-}
-.page :nth-child(1){
-  order: 1;
-}
-.page :nth-child(3){
-  order: 4;
-}
-
-.page :nth-child(2){
-  order: 3;
-}
-.page :nth-child(4){
-  order: 4;
-}
-
-@media screen and (min-width: 800px) and (orientation: landscape) {
-  .header {
-    flex-direction: row;
-    width: 940; 
-  }
-  nav{
-    text-align: right;
-    background: #D8BFD8;
-    flex-direction: row;
-  }
-div.divg{
-  width: 960px;
-}
-.page{
-  margin: 0 auto;
-  padding: 10px;
-  padding-top: 0;
-  display: flex;
-  flex-direction: column;
-}
-footer{
   width: 100%;
-  margin: 50px;
+  background-color: #E6E6FA;    
+  margin: 10px;
   padding: 1%;    
 }
-  .page :nth-child(2){
-    order: 2;
-  }
 
-  .page :nth-child(3){
-    order: 3;
-  }
-
-  .form{
-    width: 540px;
-  }
-
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
 }

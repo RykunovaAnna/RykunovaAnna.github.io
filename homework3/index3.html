@@ -5,24 +5,32 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style3.css">
   </head>
+
   <body style="margin:0;">
-    <div class="page">
-      <div id="menu">
-        <nav>
-        <a href="#list">Список ссылок</a>
-        <a href="#tab">Таблица</a>
-        <a href="#forma">Форма</a>
-      </nav>
-      <div id="divb">
-        <img id = "myimg" src="logo.png" alt="Описание картинки для скрин-ридеров и поисковиков">               
-        <header><div><h1 id="name" >Сайт Рыкуновой Анны</h1></div></header>
+    <header class="header"> 
+      <div class="header-container">
+        <div class="header-wrapper">
+          <a href="/">
+            <img id ="myimg" src="logo.png" alt="Описание картинки для скрин-ридеров и поисковиков">
+          </a>
+          <h1 class="header-title">Сайт Рыкуновой Анны</h1>
+        </div>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="#list">Список ссылок</a></li>
+            <li><a href="#tab">Таблица</a></li>
+            <li><a href="#forma">Форма</a></li>
+          </ul> 
+        </nav>                  
       </div>
-    </div>
+    </header>
     
+    <section class="main">
       <div class="divg">
-        <h2>Гиперссылки:</h2>
-          <ol id="list"></ol>
-            <ul>
+      <div class="container">
+        <div class="main-wrapper">
+            <div class="list">
+              <h2>Гиперссылки:</h2>
               <li><a href="http://kubsu.ru">абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
               <li><a href="https://kubsu.ru">абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https</a></li>
               <li><a href="http://kubsu.ru"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kubsu.ru%2Fsites%2Fdefault%2Ffiles%2Fnews%2Flogotip_s_kubgu_copy.jpg&f=1&nofb=1" alt="kubsu"></a></li>
@@ -56,128 +64,133 @@
                   <li><a href="https://www.kubsu.ru/ru/studlife" title="Студенческая жизнь">Студентам</a></li>
                 </ol>
               </li>
-              <li><a href="ftp://abc:pass123@example.com/myfile.zip"> ссылка на файл на сервере FTP с авторизацией</a></li>
-            </ul>
-      </div>  
-  
-      <div class="divg">
-        <table id="tab">
-          <caption>Таблица рейтинга популярности языков программирования</caption>
-          <thead>
-            <tr>
-             <th>Место</th>
-             <th>Язык</th>
-             <th>Популярность, %</th>
-             <th>Исходный код, %</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="colorr">
-              <td>1.</td>
-              <td>Python</td>
-              <td>16</td>
-              <td>11.2</td>
-            </tr>
-            <tr>
-              <td>2.</td>
-              <td>Java</td>
-              <td>15.3</td>
-              <td>16.6</td>
-            </tr>
-            <tr class="colorr">
-              <td>3.</td>
-              <td>C</td>
-              <td>9.1</td>
-              <td>17.1</td>
-            </tr>
-            <tr>
-              <td>4.</td>
-              <td>C++</td>
-              <td>9</td>
-              <td>12.6</td>
-            </tr>
-            <tr class="colorr">
-              <td>5.</td>
-              <td>PHP</td>
-              <td>8.3</td>
-              <td>24.3</td>
-            </tr>
-            <tr>
-              <td>6.</td>
-              <td>Ruby</td>
-              <td>8.1</td>
-              <td>2.6</td>
-            </tr>
-            <tr class="colorr">
-              <td>7.</td>
-              <td>C#</td>
-              <td>6</td>
-              <td>6.5</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="divg">
-        <form action="#" method="post" id="forma">
-          <label  id="abs">
-            ФИО:<br>
-            <input type="text" name="name" value="">
-          </label><br>
-          <label>
-            Телефон:<br>
-            <input type="tel" name="phone" value="">
-          </label><br>
-          <label>
-            E-mail:<br>
-            <input type="email" name="email" value="">
-          </label><br>
-          <label>
-            Дата рождения:<br>
-            <input type="date" name="birthday" value="">
-          </label><br>
-        </form>
-        <form action="#" method="post">
-            <label>
-              Пол:<br>
-              <input type="radio" checked="checked"
-              name="radio-group-1" value="Значение1">женский
-            </label>
-            <label><input type="radio"
-          name="radio-group-1" value="Значение2">мужской
-        </label><br>
-    </form>
-      <label>
-       Любимый язык программирования:<br>
-       <select name="field-name-1[]" multiple="multiple">
-         <option value="Значение1">Pascal</option>
-         <option value="Значение2" selected="selected">C</option>
-         <option value="Значение3" selected="selected">C++</option>
-         <option value="Значение3" selected="selected">JavaScript</option>
-         <option value="Значение5" selected="selected">PHP</option>          
-         <option value="Значение6" selected="selected">Python</option>
-         <option value="Значение7" selected="selected">Java</option>
-         <option value="Значение8" selected="selected">Haskel</option>
-         <option value="Значение9" selected="selected">Clojure</option>
-         <option value="Значение10" selected="selected">Prolog</option>
-       </select>
-      </label><br>
-      <label>
-       Биография:<br>
-       <textarea name="field-name-2"></textarea>
-      </label><br>
-      <label>
-       Чекбокс:<br>
-       <input type="checkbox" checked="checked"
-       name="check-1">с контрактом ознакомлен (а)
-      </label><br>
-      <input type="submit" value="Сохранить">
-    </div>
-  </div>  
-    <footer>
-        <div>
-          <span>(с) Рыкунова Анна 2023</span>
+            </div>
+            <div class="wrapper-table">
+                  <table class="table">
+                    <caption>Таблица рейтинга популярности языков программирования</caption>
+                    <thead>
+                      <tr>
+                       <th>Место</th>
+                       <th>Язык</th>
+                       <th>Популярность, %</th>
+                       <th>Исходный код, %</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="colorr">
+                        <td>1.</td>
+                        <td>Python</td>
+                        <td>16</td>
+                        <td>11.2</td>
+                      </tr>
+                      <tr>
+                        <td>2.</td>
+                        <td>Java</td>
+                        <td>15.3</td>
+                        <td>16.6</td>
+                      </tr>
+                      <tr class="colorr">
+                        <td>3.</td>
+                        <td>C</td>
+                        <td>9.1</td>
+                        <td>17.1</td>
+                      </tr>
+                      <tr>
+                        <td>4.</td>
+                        <td>C++</td>
+                        <td>9</td>
+                        <td>12.6</td>
+                      </tr>
+                      <tr class="colorr">
+                        <td>5.</td>
+                        <td>PHP</td>
+                        <td>8.3</td>
+                        <td>24.3</td>
+                      </tr>
+                      <tr>
+                        <td>6.</td>
+                        <td>Ruby</td>
+                        <td>8.1</td>
+                        <td>2.6</td>
+                      </tr>
+                      <tr class="colorr">
+                        <td>7.</td>
+                        <td>C#</td>
+                        <td>6</td>
+                        <td>6.5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div> 
+              </div>
+            </div>
+              <div class="divg">
+                  <form id="forma">
+                  <label  id="abs">
+                    ФИО:<br>
+                    <input type="text" name="name" value="">
+                  </label><br>
+                  <label>
+                    Телефон:<br>
+                    <input type="tel" name="phone" value="">
+                  </label><br>
+                  <label>
+                    E-mail:<br>
+                    <input type="email" name="email" value="">
+                  </label><br>
+                  <label>
+                    Дата рождения:<br>
+                    <input type="date" name="birthday" value="">
+                  </label><br>
+                  <label>
+                    Пол:<br>
+                    <input type="radio" name="radio-group-1" value="Значение1">женский
+                  </label>
+                  <label>
+                    <input type="radio" name="radio-group-1" value="Значение2">мужской
+                  </label><br> 
+                  <label>
+                    Любимый язык программирования:<br>
+                    <select name="field-name-1[]" multiple="multiple">
+                      <option value="Значение1">Pascal</option>
+                      <option value="Значение2">C</option>
+                      <option value="Значение3">C++</option>
+                      <option value="Значение4">JavaScript</option>
+                      <option value="Значение5">PHP</option>          
+                      <option value="Значение6">Python</option>
+                      <option value="Значение7">Java</option>
+                      <option value="Значение8">Haskel</option>
+                      <option value="Значение9">Clojure</option>
+                      <option value="Значение10">Prolog</option>                 
+                    </select>
+                  </label><br>
+                  <label>
+                    Биография:<br>
+                    <textarea name="field-name-2"></textarea>
+                  </label><br>
+                  <label>
+                    Чекбокс:<br>
+                    <input type="checkbox" name="check-1">с контрактом ознакомлен (а)
+                  </label>        
+                  <br>
+                  <input type="submit" value="Сохранить">     
+                </form>   
+            </div>             
         </div>
-      </footer>
+      </div>
+    </div>
+    </section>
+    
+    
+
+    
+      
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <p>(с) Рыкунова Анна 2023</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

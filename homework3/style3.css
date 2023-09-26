@@ -72,9 +72,10 @@ body {
 }
 .container {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
-  width: 960px;
+  /* width: 960px; */
 }
 .wrapper-table {
   order: 0;
@@ -153,6 +154,10 @@ body {
   }  
 }
 
+.imgkubsu{
+  width: 300px;
+}
+
 #myimg{
   float: left;
   margin: 10px;
@@ -161,7 +166,7 @@ body {
   cursor: pointer;
 }
 .divg {
-  max-width: 960px; 
+  max-width: 100%; 
   background-color: #E6E6FA;
   margin: 0 auto;
   margin-top: 20px;
@@ -169,13 +174,17 @@ body {
 }
 footer {
   color: #8B008B;
-  width: 960px;
+  width: 100%;
   background-color: #E6E6FA;    
   margin: 10px;
   padding: 1%;    
 }
-
 .main-wrapper {
   display: flex;
   flex-direction: column;
-}
+} 
+
+
+html{
+  max-width: 100%; 
+} 

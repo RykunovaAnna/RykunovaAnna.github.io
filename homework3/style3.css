@@ -1,27 +1,39 @@
-a {
-  font-size: 16px;  
-}
-th {
+/* a {
+  font-size: 25px;  
+} */
+/* th {
   font-size: 25px;
-}
-td {
+} */
+/* td {
   font-size: 25px;
   text-align: center;
 }
 caption {
   font-size: 25px;
-}
+} */
 li {
-  font-size: 16px;
+  /* font-size: 25px; */
   margin-bottom: 20px;
+  max-width: 100%;
 }
-label {
+/* label {
   font-size: 25px;
-}
+} */
 p {
   font-size: 25px;
   margin: 0;
 }
+/* .container{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+} */
+* {
+  box-sizing: border-box;
+}
+
 
 @media (min-width: 1024px) {
   a, li {
@@ -31,10 +43,10 @@ p {
 h1 {
   color: white;
 }
-.header.header {
+header.header {
   background-color: #DDA0DD;
   width: 100%;
-  position: relative;
+  
 }
 body {
   margin: 0;
@@ -45,19 +57,24 @@ body {
 }
 .header-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  /* align-items: center; */
   justify-content: space-between;
   background-color: #BA55D3;
+  /* max-width: 960px;
+  width: 100%; */
 }
-header-container {
+@media screen and (min-width: 768px) {
+  .header-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
 }
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 960px;
 }
 .wrapper-table {
   order: 0;
@@ -91,10 +108,7 @@ header-container {
     margin-top: 0;
     order: -1;
   }
-  .header.container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  
   .header-title {
     font-size: 32px;
   }
@@ -108,7 +122,7 @@ form {
 }
 
 .table {
-  width: 500px;
+  width: 100px;
   margin: 50px 0;
 }
 tr.colorr {
@@ -130,6 +144,14 @@ body {
     width: 100%;
   }
 }
+.wrapper-table{
+  order: -1;
+}
+@media (min-width: 768px) {
+  .wrapper-table{
+    order: 0;
+  }  
+}
 
 #myimg{
   float: left;
@@ -138,8 +160,8 @@ body {
   height: 100px;
   cursor: pointer;
 }
-div.divg {
-  max-width: 960px;
+.divg {
+  max-width: 960px; 
   background-color: #E6E6FA;
   margin: 0 auto;
   margin-top: 20px;
@@ -147,7 +169,7 @@ div.divg {
 }
 footer {
   color: #8B008B;
-  width: 100%;
+  width: 960px;
   background-color: #E6E6FA;    
   margin: 10px;
   padding: 1%;    

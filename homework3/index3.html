@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style3.css">
   </head>
 
-  <body style="margin:0;">
+  <body>
     <header class="header"> 
       <div class="header-container">
         <div class="header-wrapper">
@@ -29,7 +29,7 @@
     
       <div class="divg">
         <div class="main-wrapper">
-            <div class="list">
+            <div class="list" id="list">
               <h2>Гиперссылки:</h2>
               <li><a href="http://kubsu.ru">абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
               <li><a href="https://kubsu.ru">абсолютная гиперссылка на главную страницу сайта kubsu.ru в протоколе https</a></li>
@@ -63,10 +63,11 @@
                   <li><a href="https://www.kubsu.ru/ru/abiturient" title="Добро пожаловать!">Абитуриентам</a></li>
                   <li><a href="https://www.kubsu.ru/ru/studlife" title="Студенческая жизнь">Студентам</a></li>
                 </ol>
+                <li><a href="ftp://abc:pass123@example.com/myfile.zip"> ссылка на файл на сервере FTP с авторизацией</a></li>
               </li>
             </div>
             <div class="wrapper-table">
-                  <table class="table">
+                  <table class="table" id="tab">
                     <caption>Таблица рейтинга популярности языков программирования</caption>
                     <thead>
                       <tr>
@@ -179,12 +180,6 @@
         </div>
       
     </div>
-    
-    
-    
-
-    
-      
     <footer class="footer">
       <div class="container">
         <div>

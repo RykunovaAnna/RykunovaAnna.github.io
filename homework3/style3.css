@@ -123,13 +123,12 @@ body {
 }
 
 .imgkubsu{
-  width: 300px;
+  width: 250px;
 }
 @media (min-width: 768px) {
   .imgkubsu{
     width: auto;
-  }
-  
+  }  
 }
 
 #myimg{

@@ -11,6 +11,7 @@ window.addEventListener("DOMContentLoaded", function (event) {
             alert("Пожалуйста, введите корректное количество товаров.");
             kolInput.value = "";
             select1.value = "";
+            out.innerHTML = "";
             return;
         }
         var productValue = parseInt(select1.value);

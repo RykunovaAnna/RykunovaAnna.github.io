@@ -1,0 +1,41 @@
+#name{
+    color: white;
+}
+.main{
+    background-color: #E6E6FA;
+    border: 1px solid black;
+    margin: auto;
+}
+footer{
+    color: #8B008B;
+    background-color:#E6E6FA;
+}
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .main{
+      width: 70%;
+    }
+    .table{
+     width: 70%;   
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;        
+      }
+}
+body{
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw-dog.ru%2Fwallpapers%2F12%2F11%2F481285377093631.jpg&f=1&nofb=1);
+}
+#kol{
+    border: 1px solid black;
+}
+body{
+    background-color: #FFFFE0;
+}
+tr:nth-child(odd) {
+    background-color: #e8bee1;  
+}
+tr:nth-child(even) {  
+    background-color: #d3a3cc;
+}

@@ -14,6 +14,7 @@ window.addEventListener("DOMContentLoaded", function () {
     select1: 500,
     select2: 1000,
     select3: 2000,
+    checkbox1: 5,
   };
 
   let previousChecked = null;
@@ -45,8 +46,8 @@ window.addEventListener("DOMContentLoaded", function () {
       }
     } else if (selectedProduct === "product3") {
       selectElement.style.display = "none";
-      checkboxElement.style.display = "block";
-    }
+      checkboxElement.style.display = "block";      
+    }    
 
     out.innerHTML = "Цена: " + totalCost + "₽";
   }

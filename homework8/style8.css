@@ -1,38 +1,46 @@
-#name{
+#name {
     color: white;
 }
-.main{
+
+.main {
     background-color: #E6E6FA;
     border: 1px solid black;
     margin: auto;
 }
-body{
+
+body {
     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw-dog.ru%2Fwallpapers%2F12%2F11%2F481285377093631.jpg&f=1&nofb=1);
 }
-footer{
+
+footer {
     color: #8B008B;
-    background-color:#E6E6FA;
+    background-color: #E6E6FA;
 }
+
 @media screen and (min-width: 768px) and (orientation: landscape) {
-    .main{
-      width: 70%;
+    .main {
+        width: 70%;
     }
-    .table{
-     width: 70%;   
+
+    .table {
+        width: 70%;
     }
+
     footer {
         position: fixed;
         bottom: 0;
         left: 0;
-        width: 100%;        
-      }
+        width: 100%;
+    }
 }
-.form-text{
+
+.form-text {
     margin-top: 15px;
 }
-.popup-submit{
+
+.popup-submit {
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 60px;
@@ -42,46 +50,51 @@ footer{
     cursor: pointer;
     border-radius: 20px;
     box-shadow: 0 5px 0 rgb(39, 61, 42);
-    transition: background-color 0.5s ease 0s; 
+    transition: background-color 0.5s ease 0s;
     background-color: rgb(112, 172, 115);
     margin-top: 10px;
 }
-.popup-overlay{
-	display: none;
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background-color: rgba(182, 175, 134, 0.781);
-	z-index: 100;
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(182, 175, 134, 0.781);
+    z-index: 100;
 }
-.popWindow{
-	display: none;
-	margin: auto;
-	max-width: 720px;
-	padding-bottom: 20px;
-	margin-top: 40px;
-	left:50%;
-	box-shadow: 0 0 30px rgba(70, 47, 46, 0.788);
-	background-color: #FFEBCD;
+
+.popWindow {
+    display: none;
+    margin: auto;
+    max-width: 720px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    left: 50%;
+    box-shadow: 0 0 30px rgba(70, 47, 46, 0.788);
+    background-color: #FFEBCD;
     border-radius: 5px;
 }
-.popWindow h2{
-	color: black;
-	font-size: 30px;
-	text-align: center;
-	z-index: 10;
-	position: relative;
+
+.popWindow h2 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
 }
-.close-btn{
-	float:right;
-	font-size: 30px;
-	line-height: 20px;
-	cursor: pointer;
-	color: rgb(34, 34, 34);
-	padding: 10px;
+
+.close-btn {
+    float: right;
+    font-size: 30px;
+    line-height: 20px;
+    cursor: pointer;
+    color: rgb(34, 34, 34);
+    padding: 10px;
 }
+
 .thank-you-window {
     display: none;
     width: 400px;
@@ -95,20 +108,24 @@ footer{
     align-items: center;
     box-shadow: 0 0 30px rgba(18, 70, 25, 0.986);
     background-color: rgb(140, 240, 47);
-  }
-.thank-you-message{
-	font-size: 25px;
+}
+
+.thank-you-message {
+    font-size: 25px;
     color: #fff;
 }
+
 @media screen and (min-width: 700px) and (orientation: landscape) {
-    .osn{
-     width: 50%; 
-     margin: auto;
+    .osn {
+        width: 50%;
+        margin: auto;
     }
-    .btnf{
+
+    .btnf {
         padding-left: 120px;
     }
-    .form_button{
+
+    .form_button {
         width: 70%;
     }
- }
+}

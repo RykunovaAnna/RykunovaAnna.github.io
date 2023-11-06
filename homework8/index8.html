@@ -19,59 +19,79 @@
             </div>
         </header>
 
-        <form action="https://api.slapform.com/your@email.com" method="POST">
-            <div class="container">
-              <div class="row">
-                <div class="form-group"></div>
-                <div class="col">
-                  <div class="form-group">
-                    <h1 class="mt-5" style="text-align: center;">Обратная связь</h1>
-                    <div class="form-group"></div>
-                    <p class="lead">
-                      <span style="color: rgba(0, 0, 0, 0.7); font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif; font-size: 15px;">
-                        <span style="background-color: rgb(248, 249, 250); color: rgb(32, 33, 36); font-family: inherit; font-size: 14px; line-height: 13px; letter-spacing: 0px; opacity: 1;">Оставьте свое сообщение и мы свяжемся с вами в ближайшее время.</span>.</span>
-                    </p>
-                  </div>
-                  <div class="form-group">
-                    <label>ФИО:</label>
-                    <input name="name" type="text" class="form-control">
-                  </div>
-                  <div class="form-group">
-                    <div class="form-group">
-                      <label>E-mail:</label>
-                      <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Телефон:</label>
-                      <input type="number" class="form-control">
-                    </div>
-                    <div class="form-group">
-                      <label>Организация:</label>
-                      <input type="text" class="form-control">
-                      <div class="form-group">
-                        <label>Сообщение:</label>
-                        <input type="text" class="form-control">
-                        <label class="checkbox">
-                          <input type="checkbox">&nbsp;
-                          <span style="color: rgb(0, 0, 0); font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif; font-size: 15px;">согласие с политикой персональных данных</span>
-                          <br>
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Отправить</button>
-                </div>
-              </div>
-            </div>
-          </form>
+        <div class="main">
+            <div class="container-fluid pb-3 mt-3 mb-3 mx-auto">  
+    
+    <p>Мы всегда готовы помочь вам с любыми вопросами и предложениями. Наш интернет-зоомагазин гордится качественными продуктами и отличным обслуживанием клиентов. Если у вас есть какие-либо вопросы или нужна помощь, не стесняйтесь связаться с нами.</p>
 
-        <div class="order-md-last order-sm-last order-last mt-3">
-            <footer>
-              <div class="container-fluid">
-                <div class="p-1 s-0 b-0"> (c) Рыкунова Анна 2023</div>
-              </div>
-            </footer>
-        </div>
-        
-    </body>
+    <h2>Как связаться с нами:</h2>
+    <ul>
+        <li>Телефон: +7 (999) 999-99-99</li>
+        <li>Электронная почта: info@capibarapetstore.com</li>
+        <li>Адрес: Краснодар, ул. Примерная, д. 123</li>
+    </ul>
+
+    <p>Вы также можете воспользоваться формой обратной связи ниже, чтобы отправить нам сообщение. Мы обязательно ответим вам в самое ближайшее время.</p>
+
+            <div class="wrapper">
+                <div style="text-align: center;" > <a role="button" href="#popup" class="header_phone popup-link btn btn-success" id="for-popup-form">Оставить сообщение</a></div>
+                <div class="popup-overlay" id="popup">
+                  <div class="popWindow popup-main-window">
+                  <div class="close-btn">&times;</div>
+                  
+                  <div class="row my-4">
+                  <h2 class="form-text">Форма обратной связи</h2>
+                  </div>
+                  <form method="POST" class="row mx-5 my-2 gy-1 popup-form">
+                    <div class="form_item form-group">
+                        <label for="formFullName" style="color: black;">ФИО:</label>
+                        <input type="text" class="form_input _req form-control w-75 shadow bg-white rounded" name="popup-fullname" id="formFullName" placeholder="Введите ФИО" required autocomplete="name">
+                    </div>
+                    <div class="form_item form-group">
+                        <label for="formEmail" style="color: black;">Email:</label>
+                        <input type="email" class="form_input _req _email form-control w-75 shadow bg-white rounded" id="formEmail" name="popup-email" required placeholder="Введите Email" autocomplete="email">
+                    </div>
+                    <div class="form_item form-group">
+                        <label for="formPhone" style="color: black;">Телефон:</label>
+                        <input type="tel" class="form_input _req form-control w-75 shadow bg-white rounded" name="popup-phone" id="formPhone" placeholder="Введите телефон" required autocomplete="tel" pattern="[0-9]*">
+                    </div>
+                    <div class="form_item form-group">
+                        <label for="formOrganization" style="color: black;">Организация:</label>
+                        <input type="text" class="form_input form-control w-75 shadow bg-white rounded" name="popup-organization" id="formOrganization" placeholder="Введите название организации" autocomplete="organization">
+                    </div>
+                    <div class="form_item form-group w-75">
+                        <label for="formMessage" style="color: black;">Сообщение:</label>
+                        <textarea name="popup-message" class="form_input _req form-control shadow bg-white rounded" id="formMessage" autocomplete="message"></textarea>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="formCheckbox" name="popup-checkbox" class="form-check-input" required autocomplete="off">
+                        <label for="formCheckbox" class="form-check-label">Согласен с политикой обработки персональных данных</label>
+                    </div>
+                    <label class="col-12"><input type="submit" name="popup-submit" class="popup-submit"></label>
+                  </form>
+                  </div>
+                  <br>
+                  <div class="popWindow thank-you-window">
+                  <div class="close-btn">&times;</div>
+                  <br><br>
+                  <p class="thank-you-message">Ваше cообщение отправлено!</p>
+                  </div>
+                  </div>
+                
+        </div>        
+        <p>Мы ценим вашу связь с нами и всегда стараемся сделать ваше покупательское и общее впечатление приятным. Спасибо за ваш выбор!</p>
+    </div>
+</div>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <div class="order-md-last order-sm-last order-last mt-3">
+        <footer>
+          <div class="container-fluid">
+            <div class="p-1 s-0 b-0"> (c) Рыкунова Анна 2023</div>
+          </div>
+        </footer>
+    </div>
+    
+</body>
 </html>

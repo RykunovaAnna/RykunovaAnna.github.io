@@ -26,8 +26,8 @@ $(function () {
     });
 
     $(".popup-form").submit(function () {
-        var th = $(this);
-        var allFieldsFilled = true;
+        const th = $(this);
+        const allFieldsFilled = true;
 
         th.find("input, textarea").each(function () {
             if ($(this).prop("required") && $(this).val() === "") {
@@ -41,11 +41,34 @@ $(function () {
             return false;
         }
 
-        $(".popup-submit").prop("disabled", true);
-        $.ajax({
-            data: th.serialize(),
-            type: "POST",
-            url: "https://formcarry.com/s/"
+        console.log("Form Full Name:", document.getElementById("formFullName"));
+        console.log("Form Email:", document.getElementById("formEmail"));
+        console.log("Form Phone:", document.getElementById("formPhone"));
+        console.log("Form Organization:", document.getElementById("formOrganization"));
+        console.log("Form Message:", document.getElementById("formMessage"));
+        console.log("Form Checkbox:", document.getElementById("formCheckbox"));
+        
+        const formData = {
+            name: document.getElementById("formFullName").value,
+            email: document.getElementById("formEmail").value,
+            phone: document.getElementById("formPhone").value,
+            organization: document.getElementById("formOrganization").value,
+            message: document.getElementById("formMessage").value,
+            agree: document.getElementById("formCheckbox").checked,
+        };
+
+        console.log(formData);
+        const slapform = new Slapform();
+        slapform
+        .submit({
+            form: "f1WLJpeLO",
+            data: formData,
+        })
+        .then(function (response) {
+            console.log("Success", response);
+        })
+        .catch(function (e) {
+            console.error("Fail", e);
         });
 
         $popupMainWindow.fadeOut();

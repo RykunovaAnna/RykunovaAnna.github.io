@@ -7,7 +7,6 @@
             <title>Обратная связь</title>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
             <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-            <script defer src="script8.js"></script>
             <link rel="stylesheet" href="style8.css">
         </head>
         
@@ -35,11 +34,10 @@
                         <div class="popup-overlay" id="popup">
                             <div class="popWindow popup-main-window">
                                 <div class="close-btn">&times;</div>
-
                                 <div class="row my-4">
                                     <h2 class="form-text">Форма обратной связи</h2>
                                 </div>
-                                <form method="POST" class="row mx-5 my-2 gy-1 popup-form">
+                                <form action="https://api.slapform.com/f1WLJpeLO" method="POST" enctype="multipart/form-data" class="row mx-5 my-2 gy-1 popup-form">
                                     <div class="form_item form-group">
                                         <label for="formFullName" style="color: black;">ФИО:</label>
                                         <input type="text" class="form_input _req form-control w-75 shadow bg-white rounded" name="popup-fullname" id="formFullName" placeholder="Введите ФИО" required autocomplete="name">
@@ -86,6 +84,9 @@
                         </div>
                     </footer>
                 </div>
-            </div>                
+            </div>
+            
+            <script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
+            <script src="script8.js"></script>
         </body>
     </html>

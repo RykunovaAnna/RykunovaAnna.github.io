@@ -1,4 +1,4 @@
-/*jslint browser: true*/ /*global $*/
+/*jslint browser: true*/ /*global $*/ /*global Slapform*/
 $(function () {
     const $popOverlay = $(".popup-overlay");
     const $popWindow = $(".popWindow");
@@ -27,47 +27,23 @@ $(function () {
 
     $(".popup-form").submit(function () {
         const th = $(this);
-        const allFieldsFilled = true;
 
-        th.find("input, textarea").each(function () {
-            if ($(this).prop("required") && $(this).val() === "") {
-                allFieldsFilled = false;
-                return false;
-            }
-        });
-
-        if (!allFieldsFilled) {
-            alert("Заполните все обязательные поля!");
-            return false;
-        }
-
-        console.log("Form Full Name:", document.getElementById("formFullName"));
-        console.log("Form Email:", document.getElementById("formEmail"));
-        console.log("Form Phone:", document.getElementById("formPhone"));
-        console.log("Form Organization:", document.getElementById("formOrganization"));
-        console.log("Form Message:", document.getElementById("formMessage"));
-        console.log("Form Checkbox:", document.getElementById("formCheckbox"));
-        
         const formData = {
-            name: document.getElementById("formFullName").value,
-            email: document.getElementById("formEmail").value,
-            phone: document.getElementById("formPhone").value,
-            organization: document.getElementById("formOrganization").value,
-            message: document.getElementById("formMessage").value,
             agree: document.getElementById("formCheckbox").checked,
+            email: document.getElementById("formEmail").value,
+            message: document.getElementById("formMessage").value,
+            name: document.getElementById("formFullName").value,
+            organization: document.getElementById("formOrganization").value,
+            phone: document.getElementById("formPhone").value
         };
 
-        console.log(formData);
         const slapform = new Slapform();
-        slapform
-        .submit({
-            form: "f1WLJpeLO",
+        slapform.submit({
             data: formData,
-        })
-        .then(function (response) {
+            form: "f1WLJpeLO"
+        }).then(function (response) {
             console.log("Success", response);
-        })
-        .catch(function (e) {
+        }).catch(function (e) {
             console.error("Fail", e);
         });
 
